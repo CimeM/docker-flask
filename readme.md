@@ -1,26 +1,20 @@
 # Deploying flask with docker
 
-This project is about runing flask aplication within docker container. The application will be open on a port 5000 and will accept incomming requests. You can use it as a template.
+This project demonstrates simplicity of running flask application within docker container. The application will listen on a port 5000. For demonstration purposes only.
 
 ## Build and run:
 
-``` cd docker-flask ```
-
 Build the image with the name: flask
 
-``` docker build -t flask:latest ./ ```
-
-List docker images
-
-```docker images```
+```
+make build
+```
 
 Run the image we created
 
-```docker run flask:latest -d -p 5000:5000```
-
-List runing images
-
-```docker ps```
+```
+make run
+```
 
 ## Author
 
